@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strategy Viewer</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <button class="tab active" data-view="Bullish">Bullish</button>
+      <button class="tab" data-view="Bearish">Bearish</button>
+      <button class="tab" data-view="RangeBound">Rangebound</button>
+      <button class="tab" data-view="Volatile">Volatile</button>
+    </div>
+
+    <div class="dropdown">
+  <button class="dropdown-button">24-Apr-2024</button> <!-- The button must exist -->
+  <ul class="dropdown-list">
+    <li>2-May-2024</li>
+    <li class="selected">24-Apr-2024</li>
+    <li>9-May-2024</li>
+    <li>31-May-2024</li>
+    <li>21-June-2024</li>
+  </ul>
+</div>
+
+
+    <div id="strategyContainer" class="strategies"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="data.js"></script>
+</body>
+</html>
